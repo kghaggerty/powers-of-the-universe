@@ -1,0 +1,74 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* NAVBAR */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-bar {
+    float: right;
+    margin-right: 10%;
+}
+
+.logo {
+    float: left; 
+    color: rgb(246, 247, 216);
+    margin-left: 20px;
+    padding: 8px;
+    border: .2px solid rgb(246, 247, 216);
+    text-transform: uppercase;
+}
+
+header {
+    background: black;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both; 
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+
+    position: relative;
+}
+
+nav a {
+    color: rgb(246, 247, 216);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: white; 
+}
+
+nav a::before {
+    content: '';
+    display: block; 
+    height: 5px; 
+    width: 0%;
+    top: 0;
+    background-color: rgb(246, 247, 216);
+    position: absolute;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}

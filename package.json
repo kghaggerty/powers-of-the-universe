@@ -1,0 +1,31 @@
+{
+  "name": "powers-of-the-universe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kghaggerty/powers-of-the-universe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kghaggerty/powers-of-the-universe/issues"
+  },
+  "homepage": "https://github.com/kghaggerty/powers-of-the-universe#readme",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "angular-animate": "^1.6.9",
+    "angular-aria": "^1.6.9",
+    "angular-jwt": "^0.1.9",
+    "angular-material": "^1.1.7",
+    "angular-messages": "^1.6.9",
+    "angular-momentjs": "^0.2.2",
+    "angular-route": "^1.6.9",
+    "angular-storage": "0.0.15",
+    "angular-ui-router": "^1.0.3"
+  }
+}
