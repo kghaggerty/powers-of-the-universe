@@ -7,6 +7,7 @@ body {
 .container {
     width: 100%;
     margin: 0 auto;
+    display: flex;
 }
 
 .nav-bar {
@@ -43,7 +44,7 @@ nav li {
     display: inline-block;
     margin-left: 70px;
     padding-top: 25px;
-
+    flex: 1;
     position: relative;
 }
 
@@ -73,6 +74,82 @@ nav a:hover::before {
     width: 100%;
 }
 
+    
+
+  @media all and (max-width: 1100px) {
+    nav a {
+        font-size: 14px;
+        padding: 0px;
+    }
+    .search {
+      order: 1;
+    }
+
+    .logo {
+        display: none;
+    }
+  }
+  @media all and (max-width: 908px) {
+    nav a {
+        font-size: 10px;
+        padding: 0px;
+    }
+    .search {
+      order: 1;
+    }
+
+    .logo {
+        display: none;
+    }
+  }
+
+  @media all and (max-width: 760px) {
+    
+
+    nav a::before {
+        content: '';
+        display: block; 
+        height: 2px; 
+        width: 0%;
+        top: 0;
+        background-color: rgb(246, 247, 216);
+        position: absolute;
+        transition: all ease-in-out 250ms;
+    }
+    
+    nav a:hover::before {
+        width: 100%;
+    }
+
+    
+  
+    nav li {
+          display: block;
+          text-align: center;
+          padding-bottom: 20px;
+          padding-top: 30px;
+          padding-left: 0px;
+    }
+        
+
+    nav a {
+        font-size: 18px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .container {
+        border: 1px solid rgb(246, 247, 216); 
+    }
+
+}
+/*HOME PAGE */
+
+.home-container {
+    position: absolute;
+    z-index: 5;
+    color: white;
+}
 
 /* STARS */
 
@@ -81,34 +158,12 @@ Nick Mkrtchyan
 https://www.facebook.com/sonick.pk
 http://www.Mkrtchyan.zz.mu
 ================================================================================================= */
-* {
-    margin: 0;
-    padding: 0;
-}
+
 header {
-    background-color:rgba(33, 33, 33, 0.9);
-    color:#ffffff;
-    display:block;
-    font: 14px/1.3 Arial,sans-serif;
-    height:50px;
     position:relative;
     z-index:5;
 }
-h2{
-    margin-top: 30px;
-    text-align: center;
-}
-header h2{
-    font-size: 22px;
-    margin: 0 auto;
-    padding: 10px 0;
-    width: 80%;
-    text-align: center;
-}
-header a, a:visited {
-    text-decoration:none;
-    color:#fcfcfc;
-}
+
 
 @keyframes move-twink-back {
     from {background-position:0 0;}
@@ -145,7 +200,7 @@ header a, a:visited {
 }
 
 .stars, .twinkling, .clouds {
-  position:absolute;
+  position:fixed;
   top:0;
   left:0;
   right:0;
@@ -153,6 +208,7 @@ header a, a:visited {
   width:100%;
   height:100%;
   display:block;
+  overflow: hidden;
 }
 
 .stars {
