@@ -5,74 +5,76 @@ body {
 /* NAVBAR */
 
 .container {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-}
-
-.nav-bar {
-  float: right;
-  margin-right: 10%;
-}
-
-.logo {
-  float: left;
-  color: rgb(246, 247, 216);
-  margin-left: 20px;
-  padding: 8px;
-  border: 0.2px solid rgb(246, 247, 216);
-  text-transform: uppercase;
-}
-
-.header-nav {
-  background: black;
-}
-
-.header-nav::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 25px;
-  flex: 1;
-  position: relative;
-}
-
-nav a {
-  color: rgb(246, 247, 216);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: white;
-}
-
-nav a::before {
-  content: "";
-  display: block;
-  height: 5px;
-  width: 0%;
-  top: 0;
-  background-color: rgb(246, 247, 216);
-  position: absolute;
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
-  width: 100%;
-}
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  .nav-bar {
+    float: right;
+    margin-right: 10%;
+  }
+  
+  .logo {
+    float: left;
+    color: rgb(246, 247, 216);
+    margin-left: 20px;
+    padding: 8px;
+    border: 0.2px solid rgb(246, 247, 216);
+    text-transform: uppercase;
+    position: absolute;
+  }
+  
+  .header-nav {
+    background: black;
+  }
+  
+  .header-nav::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 25px;
+    flex: 1;
+    position: relative;
+  }
+  
+  nav a {
+    color: rgb(246, 247, 216);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  nav a:hover {
+    color: white;
+  }
+  
+  nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 0%;
+    top: 0;
+    background-color: rgb(246, 247, 216);
+    position: absolute;
+    transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+  }
 
 @media all and (max-width: 1100px) {
   nav a {
@@ -143,7 +145,7 @@ nav a:hover::before {
   width: 100%;
   height: 70%;
   margin-top: 80px;
-  opacity: .7;
+  opacity: .2;
   /* border: .5px solid rgb(246, 247, 216, .8); */
 }
 
@@ -157,7 +159,8 @@ nav a:hover::before {
     padding-right: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
-    border: 1px solid rgb(246, 247, 216);
+    border: 1px solid rgb(246, 247, 216, .7);
+    background: rgb(0, 0, 0, .2);
 }
 
 /* STARS */
