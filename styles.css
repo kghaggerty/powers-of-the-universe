@@ -27,6 +27,7 @@ body {
   
   .header-nav {
     background: black;
+    padding-bottom: 18px;
   }
   
   .header-nav::after {
@@ -187,6 +188,39 @@ body {
     border-top: 2px solid rgb(246, 247, 216);
     background: rgb(0, 0, 0);
     height: 70%;
+}
+
+/* ABOUT */
+.about-header {
+    position: absolute;
+    z-index: 6;
+}
+
+.about-content {
+    position: absolute;
+    z-index: 6;
+    color: rgb(246, 247, 216);
+    margin-top: 290px;
+    font-size: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid rgb(246, 247, 216);
+    background: rgb(0, 0, 0);
+    height: 70%;
+}
+
+.about-text-header {
+    display: inline-block;
+    color: rgb(246, 247, 216);
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    margin-top: 5%;
 }
 
 /* STARS */
