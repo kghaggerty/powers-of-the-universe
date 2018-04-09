@@ -138,7 +138,7 @@ body {
 }
 /*HOME PAGE */
 
-.home-container {
+/* .home-container {
   background: black;
   z-index: 5;
   position: absolute;
@@ -146,21 +146,22 @@ body {
   height: 70%;
   margin-top: 80px;
   opacity: .2;
-  /* border: .5px solid rgb(246, 247, 216, .8); */
-}
+  position: absolute;
+  border: .5px solid rgb(246, 247, 216, .8); 
+} */
 
 .home-header {
     position: absolute;
     z-index: 6;
     color: rgb(246, 247, 216);
-    margin-top: 80px;
+    margin-top: 290px;
     font-size: 18px;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
-    border: 1px solid rgb(246, 247, 216, .7);
-    background: rgb(0, 0, 0, .2);
+    border-top: 2px solid rgb(246, 247, 216);
+    background: rgb(0, 0, 0);
 }
 
 /* STARS */
