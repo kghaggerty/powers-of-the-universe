@@ -3,7 +3,7 @@
 angular
   .module("authApp", ["ngMaterial", "ui.router", "ngRoute"])
 
-  .config(function ($provide, $urlRouterProvider, $stateProvider, $httpProvider) {
+  .config(function ($provide, $urlRouterProvider, $stateProvider, $httpProvider, $locationProvider) {
     $urlRouterProvider.otherwise("/home");
 
     $stateProvider.state("home", {
@@ -22,4 +22,6 @@ angular
       url: "/direction",
       templateUrl: "components/direction/direction.tpl.html"
     })
+
+    $locationProvider.html5Mode(true);
   })
