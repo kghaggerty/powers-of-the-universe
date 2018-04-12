@@ -3,16 +3,10 @@ body {
 }
 
 /* NAVBAR */
-
 .container {
     width: 100%;
     margin: 0 auto;
     display: flex;
-  }
-  
-  .nav-bar {
-    float: right;
-    margin-right: 10%;
   }
   
   .logo {
@@ -27,7 +21,7 @@ body {
   
   .header-nav {
     background: black;
-    padding-bottom: 18px;
+    border-bottom: 2px solid rgb(246, 247, 216);
   }
   
   .header-nav::after {
@@ -40,14 +34,12 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    float: right;
   }
   
   nav li {
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 50px;
     padding-top: 8px;
-    flex: 1;
     position: relative;
   }
   
@@ -59,7 +51,8 @@ body {
   }
 
   .active:focus {
-    text-shadow: 0 0 0.2em rgba(255, 255, 255, 0.541); 
+    text-shadow: 0 0 0.2em rgba(255, 255, 255, 0.829); 
+    color: white;
   }
   
   nav a:hover {
@@ -97,7 +90,8 @@ body {
 @media all and (max-width: 908px) {
   nav a {
     font-size: 10px;
-    padding: 0px;
+    padding-left: 0;
+    text-align: center;
   }
   .search {
     order: 1;
@@ -204,14 +198,13 @@ body {
     position: absolute;
     z-index: 6;
     color: rgb(246, 247, 216);
-    margin-top: 290px;
     font-size: 18px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 20px;
+    padding-top: 100px;
     padding-bottom: 20px;
-    border-top: 2px solid rgb(246, 247, 216);
-    height: 70%;
+    /* border-top: 2px solid rgb(246, 247, 216); */
+    
 }
 
 .about-text-header {
